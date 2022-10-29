@@ -37,7 +37,7 @@ fn _run(s: String) -> Result<String, String> {
         body = format!(
             r#"This PR's title doesn't match our requirement.
 Please make sure your title includes the corresponding Jira id.
-@{}, please update it."#,
+@{}, please update it. ---"#,
             pull_request.user.login
         );
     };
